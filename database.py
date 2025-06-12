@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session, declarative_base, sessionmaker
 from sqlalchemy import create_engine
 
-DATABASE_CONNECTION_URL = "sqlite:///./database.db"
+DATABASE_CONNECTION_URL = "mysql+pymysql://root:@localhost:3307/notepaddb"
 
 engine = create_engine(DATABASE_CONNECTION_URL)
 
@@ -15,5 +15,3 @@ def get_db():
         yield db
     finally:
         db.close()
-
-#, connect_args={"check_same_thread": False}
