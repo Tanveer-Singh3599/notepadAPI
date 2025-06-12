@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 __pycache__/
 CRUD/__pycache__
 routes/__pycache__
 .venv
+=======
+__pycache__
+.venv
+>>>>>>> e6ab134b18fc7c73c0509d6b160e6f7a31a127cf
